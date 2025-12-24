@@ -66,6 +66,9 @@ fun! ToggleCC()
 endfun
 map <C-c> :call ToggleCC()<CR>
 
+" ctrl+p to toggle paste mode
+nnoremap <C-p> :set invpaste paste?<CR>
+
 " ctrl+s to strip trailing whitespaces
 map <C-s> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
